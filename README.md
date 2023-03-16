@@ -17,3 +17,8 @@
 
     pip3 install flask   
     python3 webhooks.py
+
+### 之后在你的仓库中添加webhook
+
+    webhook地址：
+    server:8000/webhooks/github
