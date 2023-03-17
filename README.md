@@ -22,3 +22,10 @@
 
     webhook地址：
     server:8000/webhooks/github
+
+### docker启动，-v将宿主机的代码路径映射到容器内，config.ini中path修改为映射到容器内的路径
+
+    docker run -itd --name container_name -p 8000:8000 -v your_dir:your_dir image_name
+    进入容器
+    cd /opt/webhooks_deploy
+    编辑你的config.ini
